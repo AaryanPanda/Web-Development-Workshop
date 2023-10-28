@@ -1,11 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Web-Development Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Poppins:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800&family=Playpen+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <img id="logo" src="./assets/Logo.png" alt="">
+        <div id="cart">
+            <img id="cart-logo" src="./assets/Cart.png" alt="">
+            <p>CART (<span id="item-count">0</span>)</p>
+        </div>
+    </nav>
+
+
+    <div id="cart-popup" class="show">
+        <p id="popup-title">Cart Items</p>
+        <div id="checkout-items"> </div>
+        <p id="total">Total Bill: <span id="total-amount">0</span></p>
+        <div id="checkout"> <p>Checkout</p></div>
+    </div>
+
+
+    <div id="background"> </div>
+
+    <p id="face">FACE PRODUCTS</p>
+
+    <div id="parent-container-1">
+        <div class="item-container-1">
+            <div class="items">
+                <img src="./assets/Face-Wash.png" alt="">
+                <div class="details">
+                    <p class="name">Face Wash</p>
+                    <div class="price-div">
+                        <p>Rs.65</p>
+                        <div class="add" data-name="Face Wash" data-price="65" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Scrub.png" alt="">
+                <div class="details">
+                    <p class="name">Face Scrub</p>
+                    <div class="price-div">
+                        <p>Rs.90</p>
+                        <div class="add" data-name="Face Scrub" data-price="90" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Mask.png" alt="">
+                <div class="details">
+                    <p class="name">Face Mask</p>
+                    <div class="price-div">
+                        <p>Rs.100</p>
+                        <div class="add" data-name="Face Mask" data-price="100" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Cream.png" alt="">
+                <div class="details">
+                    <p class="name">Face Cream</p>
+                    <div class="price-div">
+                        <p>Rs.199</p>
+                        <div class="add" data-name="Face Cream" data-price="199" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Oil.png" alt="">
+                <div class="details">
+                    <p class="name">Face Oil</p>
+                    <div class="price-div">
+                        <p>Rs.155</p>
+                        <div class="add" data-name="Face Oil" data-price="155" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Serum.png" alt="">
+                <div class="details">
+                    <p class="name">Face Serum</p>
+                    <div class="price-div">
+                        <p>Rs.299</p>
+                        <div class="add" data-name="Face Serum" data-price="299" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Face-Pack.png" alt="">
+                <div class="details">
+                    <p class="name">Face Pack</p>
+                    <div class="price-div">
+                        <p>Rs.149</p>
+                        <div class="add" data-name="Face Pack" data-price="149" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="items">
+                <img src="./assets/Blotting-Paper.png" alt="">
+                <div class="details">
+                    <p class="name">Blotting Paper</p>
+                    <div class="price-div">
+                        <p>Rs.115</p>
+                        <div class="add" data-name="Blotting Paper" data-price="115" data-quantity="0">Add</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p id="hair">HAIR PRODUCTS</p>
+
+    <div id="parent-container-2">
+
+        <div class="item-container-2">
+
+            <div class="flex-controller">
+
+                <div class="items">
+                    <img src="./assets/Hair-Gel.png" alt="">
+                    <div class="details">
+                        <p class="name">Hair Gel</p>
+                        <div class="price-div">
+                            <p>Rs.220</p>
+                            <div class="add" data-name="Hair Gel" data-price="220" data-quantity="0">Add</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./assets/Shampoo.png" alt="">
+                    <div class="details">
+                        <p class="name">Shampoo</p>
+                        <div class="price-div">
+                            <p>Rs.179</p>
+                            <div class="add" data-name="Shampoo" data-price="179" data-quantity="0">Add</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./assets/Conditioner.png" alt="">
+                    <div class="details">
+                        <p class="name">Conditioner</p>
+                        <div class="price-div">
+                            <p>Rs.80</p>
+                            <div class="add" data-name="Conditioner" data-price="80" data-quantity="0">Add</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./assets/Beard-Oil.png" alt="">
+                    <div class="details">
+                        <p class="name">Beard Oil</p>
+                        <div class="price-div">
+                            <p>Rs.275</p>
+                            <div class="add" data-name="Beard Oil" data-price="275" data-quantity="0">Add</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
 </body>
+
+
+<footer class="footer">
+    <div id="contact">
+        <p class="title">Contact Us</p>
+        <div class="title-details">
+            <p>Email: aaryanpanda04@gmail.com</p>
+            <p>Phone: +91 8114720014</p>
+            <p>Monday to Friday: 9:00 AM - 5:00 PM</p>
+        </div>
+    </div>
+    <div id="follow">
+        <p class="title">Follow Us On</p>
+        <div class="title-details">
+            <img src="./assets/facebook.png" alt="">
+            <img src="./assets/twitter.png" alt="">
+            <img src="./assets/instagram.png" alt="">
+        </div>
+    </div>
+</footer>
+
+
 </html>
