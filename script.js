@@ -26,7 +26,7 @@ document.addEventListener('click', function (event) {
 
         }
     }
-    console.log(cartItems)
+    
 });
 
 
@@ -79,7 +79,7 @@ cart.addEventListener('click', function () {
 let whatsappLink = "https://api.whatsapp.com/send?phone=918114720014&text=Order%20details"
 
 function whatsappApi() {
-    console.log("calling")
+
     for (const [itemTitle, itemInfo] of Object.entries(cartItems)) {
 
         whatsappLink += "%0A" + itemTitle + ":" + "%20" + "Rs." + itemInfo.price + "%20" + "(" + itemInfo.quantity + ")"
