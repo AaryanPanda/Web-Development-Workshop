@@ -46,7 +46,7 @@ const cartPopup = document.getElementById("cart-popup");
 const checkoutItems = document.getElementById("checkout-items")
 const bill = document.getElementById("total-amount")
 const checkout = document.querySelector("#checkout")
-let amountTotal = 0;  
+let amountTotal = 0;
 
 
 
@@ -81,11 +81,11 @@ let whatsappLink = "https://api.whatsapp.com/send?phone=918114720014&text=Order%
 function whatsappApi() {
     console.log("calling")
     for (const [itemTitle, itemInfo] of Object.entries(cartItems)) {
-        if (itemInfo.quantity !== 0) {
-            whatsappLink += "%0A" + itemTitle + ":" + "%20" + "Rs." + itemInfo.price + "%20" + "(" + itemInfo.quantity + ")"
-        }
+
+        whatsappLink += "%0A" + itemTitle + ":" + "%20" + "Rs." + itemInfo.price + "%20" + "(" + itemInfo.quantity + ")"
+
     }
-    
+
     whatsappLink += "%0A" + "The total amount is Rs." + amountTotal
 }
 
